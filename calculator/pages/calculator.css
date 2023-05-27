@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body {
+
+    overflow: hidden;
+    font-family: cursive;
+    user-select: none;
+    background-image: url("../images/4002676.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+
+}
+
+.calculator input[type="text"] {
+    width: 486px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calculator button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    border-color: linear rgb(51, 50, 50);
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.calculator button:hover {
+    background-color: tomato;
+
+}
+
+.calculator .btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    font-weight: bold;
+
+}
+
+.light-mode {
+    background-color: #f8f5f5;
+    color: #333;
+}
+
+.light-mode input[type="text"] {
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode input[type="text"] {
+    color: #333;
+}
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .calculator {
+        max-width: 90%;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .calculator {
+        max-width: 80%;
+    }
+}
+
+/* Laptop Devices */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .calculator {
+        max-width: 40%;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1366px) {
+    .calculator {
+        max-width: 40%;
+    }
+}

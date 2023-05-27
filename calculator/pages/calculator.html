@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="calculator light-mode">
+            <input type="text" id="result" readonly>
+            <div class="btn-container">
+                <button onclick="clearResult()">Clear</button>
+                <button onclick="deleteLastCharacter()">&#9003;</button>
+                <button onclick="appendToResult('%')">%</button>
+                <button onclick="appendToResult('/')">/</button>
+            </div>
+
+            <div class="btn-container">
+                <button onclick="reciprocal()">1/x</button>
+                <button onclick="square()">x²</button>
+                <button onclick="appendToResult('(')">(</button>
+                <button onclick="appendToResult(')')">)</button>
+
+            </div>
+
+            <div class="btn-container">
+                <button onclick="appendToResult(7)">7</button>
+                <button onclick="appendToResult(8)">8</button>
+                <button onclick="appendToResult(9)">9</button>
+                <button onclick="appendToResult('*')">*</button>
+            </div>
+            <div class="btn-container">
+                <button onclick="appendToResult(4)">4</button>
+                <button onclick="appendToResult(5)">5</button>
+                <button onclick="appendToResult(6)">6</button>
+                <button onclick="appendToResult('-')">-</button>
+            </div>
+            <div class="btn-container">
+                <button onclick="appendToResult(3)">3</button>
+                <button onclick="appendToResult(2)">2</button>
+                <button onclick="appendToResult(1)">1</button>
+                <button onclick="appendToResult('+')">+</button>
+            </div>
+            <div class="btn-container">
+
+                <button onclick="toggleMode()">🌙</button>
+                <button onclick="appendToResult(0)">0</button>
+                <button onclick="appendToResult('.')">.</button>
+                <button onclick="calculate()">Ans(=)</button>
+
+            </div>
+        </div>
+    </header>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
